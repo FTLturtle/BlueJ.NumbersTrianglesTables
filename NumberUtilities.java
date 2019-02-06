@@ -4,26 +4,13 @@ import java.lang.Math;
 public class NumberUtilities {
 
     public static String getRange(int stop) {
-        String range = "";
-        
-        for (int n = 0; n < stop; n++){
-            range = range + n;
-        }
-        
-        return range;
+        return getRange(0, stop);
     }
 
     public static String getRange(int start, int stop) {
-        String range = "";
-        
-        for (int n = start; n < stop; n++){
-            range = range + n;
-        }
-        
-        return range;
+        return getRange(start, stop, 1);
     }
-
-
+    
     public static String getRange(int start, int stop, int step) {
         String range = "";
         
